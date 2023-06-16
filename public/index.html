@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso Denegado</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Signin</title>
 
-    <h1>Acceso Denegado</h1>
+    />
+  </head>
+  <body>
+    <h1>Google Signin</h1>
+    <hr />
+    <div
+      <div id="g_id_onload"
+     data-client_id="795496812887-megcfvqtl09kdjjmgusk8n9umgqgpmhq.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="http://localhost:8080/api/auth/googleLogin"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="filled_blue"
+     data-text="signin_with"
+     data-size="large"
+     data-locale="es-419"
+     data-logo_alignment="left">
+</div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+   
+    <!-- <script>
+        var url = ( window.location.hostname.includes('localhost'))
+                    ? 'http://localhost:8080/api/auth/googleLogin'
+                    : 'https://curso-node-restserver-production-a26b.up.railway.app/api/auth/googleLogin';
+        
+
+        const data = 'credential=ID_TOKEN';
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'http://localhost:8080/api/auth/googleLogin');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if(xhr.readyState == 4 && xhr.status === 200) {
+                console.log('hola');
+                
+            
+            }
+        }
+
+        xhr.send(data);
+
+    </script>     -->
     
-</body>
+    
+  </body>
 </html>
